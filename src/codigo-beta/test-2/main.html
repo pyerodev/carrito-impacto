@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="items">
+            <div class="item" data-price="100" data-name="Item 1">
+                <img src="https://via.placeholder.com/150" alt="Item 1">
+                <p>Item 1 - $100</p>
+                <button onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+            <div class="item" data-price="200" data-name="Item 2">
+                <img src="https://via.placeholder.com/150" alt="Item 2">
+                <p>Item 2 - $200</p>
+                <button onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+            <div class="item" data-price="300" data-name="Item 3">
+                <img src="https://via.placeholder.com/150" alt="Item 3">
+                <p>Item 3 - $300</p>
+                <button onclick="addToCart(this)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <div class="summary">
+                <p>Subtotal: $<span id="subtotal">0</span></p>
+                <p>Costo de Envío: $<span id="shipping">50</span></p>
+                <p>Total: $<span id="total">50</span></p>
+                <button id="checkout">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

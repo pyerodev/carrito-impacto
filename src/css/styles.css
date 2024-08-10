@@ -1,0 +1,83 @@
+/* AJUSTES GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ^ Importación de fuente desde Google Fonts ^ */
+
+*{
+    box-sizing: border-box; 
+    /* Permite establecer el ancho o alto exacto que deseas sin tener que hacer cálculos adicionales para el padding y los bordes. */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+h2{
+    font-size: small;
+}
+
+p{
+    font-size: smaller;
+}
+
+/* CONFIGURACIÓN DEL GRID */
+.grid-container{
+    display: grid;
+    background-color: rgb(193, 216, 255);
+    grid-template-columns: auto auto; /* Configura la cantidad de las columnas */
+}
+
+.grid-container div{
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(199, 199, 199); /* añde un borde, tamaño del contorno y color */
+}
+
+
+/* CARRITO DE COMPRAS */
+.img-item-1{ /* Ajustes de la imagen */
+    width: 150px;
+    height: auto;
+}
+
+.nombre-item-minicodigo{ /* Ajustes de la descripción */
+    word-break: break-word;
+    width: 30%;  
+    height: auto;  
+}
+
+.descripcion-item{
+    font-size: small;
+    margin-bottom: 0.5rem;
+}
+
+.cantidad-unidades{
+    font-weight: 300;
+}
+
+
+/* RESUMEN DEL CARRITO */
+.button-continuar{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1A59A5;
+    border-radius: 13px;
+    border: 0px;
+    cursor: pointer;
+    height: 5vh;
+    width: 28vh;
+    font-size: medium;
+}
+
+.button-continuar:hover{
+    box-shadow: 0 0 5px #868686;
+    background-color: #1f78e6;
+}
+
+
+
+/* ANTES DE COMPRAR */
+.antes-de-comprar{
+    background-color: #f2f0f0; /* Asigna un color al fondo */
+    font-weight: bold; /* Pone en negrita el texto */
+}

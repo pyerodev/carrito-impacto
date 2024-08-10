@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!--BARRA DE NAVEGACIÓN-->
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="logo">
+            <img src="../test/img/Logo-Impacto.png" alt="Logo de Importaciones Impacto">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Iniciar Sesión</a></li>
+                <li><a href="#">Mis Pedidos</a></li>
+                <li><a href="#">Contacto </a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn"><button>Mi Carrito</button></a>
+    </header>
+
+
+<!--ITEMS DEL CARRITO DE COMPRAS-->
+<main class="carrito-compras">
+    <article class="seccion-carrito-compras">
+        <h1>Carrito de Compras</h1>
+        <p>(2 productos)</p>
+        <button class="limpiar-carrito">
+            Limpiar Carrito
+        </button>
+    </article>
+    <!--LISTA DE ITEMS SELECCIONADOS Y SU DESCRIPCIÓN -->
+    <article class="box-lista-items">
+        <article class="item-1">
+            <input type="checkbox" name="" id="">
+            <img src="/test/img/CM-SK630.jpg" alt="" class="figura-1">
+            <div class="descripcion-id">
+                <h2>TECLADO GAMER COOLER MASTER SK630 (SK-630-GKLR1-SP) MECANICO | SWITCH RED | LED RGB | LOW PROFILE | NEGRO</h2>
+                <p class="mini-codigo">Minicodigo: 011910</p>
+            </div>
+            <p class="valor-monetario">
+                <p class="usd">$ 125</p>
+                <p class="soles">S/. 472</p>
+            </p>
+            <!--Contador de -->
+            <div id="contador">
+                <div>
+                    <button id="mas" class="boton-contador">
+                        +
+                    </button>
+                    <span id="valor">
+                        2
+                    </span>
+                    <button id="menos" class="boton-contador">
+                        -
+                    </button>
+                    <p>Máx 10 unidades</p>
+                </div>
+                <button type="reset">
+                    Eliminar
+                </button>
+            </div>
+            <script src="/test/script.js"></script>
+        </article>
+
+        <article class="item-1">
+            <input type="checkbox" name="" id="">
+            <img src="/test/img/4060-TI.webp" alt="" class="figura-1">
+            <div class="descripcion-id">
+                <h2>TARJETA DE VIDEO GIGABYTE RTX 4060 TI GAMING OC 16GB GDDR6 (GV-N406TGAMING-OC-16GD) GEFORCE NVIDIA 128 BITS | 3 VENTILADORES</h2>
+                <p class="mini-codigo">Minicodigo: 018197</p>
+            </div>
+            <p class="valor-monetario">
+                <p class="usd">$6 05</p>
+                <p class="soles">S/2,290</p>
+            </p>
+            <!--Contador de -->
+            <div id="contador">
+                <div>
+                    <button id="mas" class="boton-contador">
+                        +
+                    </button>
+                    <span id="valor">
+                        1
+                    </span>
+                    <button id="menos" class="boton-contador">
+                        -
+                    </button>
+                    <p>Máx 10 unidades</p>
+                </div>
+                <button type="reset">
+                    Eliminar
+                </button>
+            </div>
+            <script src="/test/script.js"></script>
+        </article>
+
+    </article>
+</main>
+
+<!--RESUMEN-->
+<section class="resumen">
+    <h1>Resumen</h1>
+    
+    <!--CUADRO DEL RESUMEN TOTAL DE LA COMPRA-->
+    <div class="cuadro-resumen">    
+        <!--Subtotal - Número de Items - Precio-->
+        <div class="seccion-subtotal">
+        <article class="subtotal-n-items">
+                <p>Subtotal</p>
+                <p>2</p>
+        </article>
+        <article class="cantidad-subtotal">
+            <p>$618.64</p>
+        </article>
+
+        </div>
+
+        <!--IGV - Precio-->
+        <div class="seccion-envio">
+            <article class="envio">
+                <p>Costo de envío</p>
+            </article>
+            <article class="cantidad-envio">
+                <p>$4</p>
+            </article>
+        </div>
+
+        <!--Total - Precio Total USD, PEN-->
+        <div class="seccion-total">
+            <article class="total">
+                <p>Total</p>
+            </article>
+            <article class="cantidad-total">
+                <p>$ 730</p>
+                <p>S/. 2,760</p>
+            </article>
+        </div>
+
+        <!--boton de continuar-->
+        <button class="continuar">
+            <p>CONTINUAR</p>
+        </button>
+    </div>
+    <article class="metodos-pago">
+        <img src="/test/img/paga-con.svg" alt="" class="imagen-pagos">
+    </article>
+</section>
+
+   
+<!--ADVERTENCIA ANTES DE REALIZAR LA COMPRA-->
+    <section class="advertencia">     
+        <p>
+            Estimado Cliente, tenga en cuenta que los productos que poseen en su stock un mínimo de 5 unidades, deberán ser verificados con un asesor de ventas antes de finalizar su compra. Con el fin de evitar inconvenientes por productos ya vendidos.
+            <br><br>
+            Recuerde que si compra con una tarjeta de crédito o débito:
+            <br><br>
+            - Cada producto costará un 5% más.
+            <br>
+            - El propietario de la tarjeta deberá ser la persona que recoja o reciba los productos.
+            <br><br><br>
+            Agradecemos su amable comprensión.
+        </p>
+    </section>
+
+<!--PIE DE PAGINA-->
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-logo">
+            <p>IMPORTACIONES IMPACTO</p>
+        </div>
+        <div class="footer-enlaces">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="footer-contacto">
+            <h4>Contáctenos</h4>
+            <p>Email: contacto@importacionesimpacto.com</p>
+            <p>Teléfono: +51 123 456 789</p>
+            <p>Dirección: Av. Bolivia N° 148 - CC. CENTRO LIMA - Int. 552-553 .</p>
+        </div>
+        <div class="footer-redes">
+            <h4>Síguenos</h4>
+            <a href="#"><img src="/test/img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/test/img/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="/test/img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/test/img/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+    <div class="footer-derechos">
+        <p>&copy; 2024 IMPORTACIONES IMPACTO. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
